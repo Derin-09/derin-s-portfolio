@@ -1,0 +1,201 @@
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/******************************NAV-BAR****************************************/
+.navbar {
+    position: fixed;
+    display: flex;
+    margin-bottom: 50px;
+    background-color: black;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-width: 400px;
+    
+}
+.one {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline;
+    font-size: 20px;
+    color: rgb(241, 75, 102);
+    margin-left: 20px;
+    min-width: 100px;
+    display: inline-flex;
+    flex: 2;
+}
+.others {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    flex: 1;
+    min-width: 50px;
+    justify-content: space-evenly;
+    float: right;
+    align-items: center;
+}
+.nav:hover {
+    color: rgb(241, 75, 102);
+    cursor: pointer;
+}
+/******************************HOME****************************************/
+.home {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 150px;
+    padding-top: 100px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: inline;
+    
+}
+.first {
+    display: inline-block;
+    width: 300px;
+}
+.name {
+    display: inline;
+    margin-bottom: -20px;
+}
+.name span {
+    color: rgb(241, 75, 102);
+}
+.job {
+    margin-top: -15px;
+}
+.extra {
+    font-size: 19px;
+    color: white;
+}
+/************************ABOUT******************************/
+.about {
+    border: 1px solid rgb(241, 75, 102);
+    width: 800px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.title {
+    text-align: center;
+}
+.more-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.more-info li {
+    list-style: none;
+    margin-left: -40px;
+    line-height: 30px;
+}
+.skillset, .time {
+    color: rgb(241, 75, 102);
+    font-weight: 700;
+}
+/****************************PORTFOLIO*********************************/
+.portfolio {
+    margin-left: 50px;
+    
+}
+.heading h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.images {
+    display: flex;
+    gap: 30px;
+}
+.images img {
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.images img:hover {
+    background-color: rgb(241, 75, 102);
+    cursor: pointer;
+}
+/*********************CONTACT***********************************/
+.contact {
+    margin-left: 50px;
+    margin-bottom: 70px;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 10px;
+}
+.contact>div>h1 {
+    color: rgb(241, 75, 102);
+    font-size: 40px;
+    margin-top: -10px;
+}
+.contact .first {
+    grid-row: span 3;
+}
+.contact>div>input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 211, 211);
+    color: rgb(94, 94, 94);
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.fourth input::placeholder{
+    display: grid;
+    text-align: start;
+    align-items: start;
+    
+}
+/*********************FOOTER******************************************/
+.footer {
+    width: 100%;
+    background-color: rgb(241, 75, 102);
+    text-align: center;
+    height: 30px;
+    padding-left: -10px;
+    padding-right: -10px;
+    padding-top: 10px;
+}
+/************************MEDIA****************************************/
+@media(max-width:650px){
+    body {
+        
+    }
+    
+    .navbar {
+        width: 500px;
+        
+    
+    }
+    .home {
+        margin-left: 20px;
+        width: 490px;
+       /* border: 2px solid pink;*/
+    }
+    .home img {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+    }
+    .extra {
+        font-size: 15px;
+    }
+}
